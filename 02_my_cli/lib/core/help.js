@@ -14,6 +14,7 @@ const helpOptions = () => {
 
   // 监听命令
   program.on("--help", function (val) {
+    console.log(" ");
     console.log("欢迎使用yuuki前端开发小工具");
   });
 };
