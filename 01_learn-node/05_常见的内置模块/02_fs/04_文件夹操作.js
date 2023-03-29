@@ -1,10 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // 1.创建文件夹
-const dirname = './why';
+const dirname = "./why";
 if (!fs.existsSync(dirname)) {
-  fs.mkdir(dirname, err => {
+  fs.mkdir(dirname, (err) => {
     console.log(err);
   });
 }
@@ -31,11 +31,8 @@ if (!fs.existsSync(dirname)) {
 // getFiles(dirname);
 
 // 3.重命名
-fs.rename("./why", "./kobe", err => {
+fs.rename("./why", "./kobe", (err) => {
   console.log(err);
-})
-
+});
 
 // 3.文件夹的重命名
-
-

@@ -30,8 +30,8 @@ function sayHello(name) {
 // 导出一个对象类型的引用传递案例分析(内存画图)
 // let name = "coderwhy";
 const info = {
-  name: 'coderwhy'
-}
+  name: "coderwhy",
+};
 
 setTimeout(() => {
   info.name = "11111111";
@@ -40,14 +40,13 @@ setTimeout(() => {
 module.exports = {
   info: info,
   age: 123,
-  sayHello: function(name) {
+  sayHello: function (name) {
     console.log("你好" + name);
-  }
-}
+  },
+};
 
 // exports和module.exports之间有什么关系呢?
 // 导出一个新的对象, 对导出的内容的影响: 不带exports玩了
 // module.exports = {
 
 // };
-

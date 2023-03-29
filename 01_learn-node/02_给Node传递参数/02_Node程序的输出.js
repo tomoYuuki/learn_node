@@ -3,9 +3,9 @@ console.log(process.argv[3]);
 
 console.clear();
 
-process.argv.forEach(item => {
+process.argv.forEach((item) => {
   console.log(item);
-})
+});
 
 function foo() {
   bar();
@@ -16,6 +16,3 @@ function bar() {
 }
 
 foo();
-
-
-
