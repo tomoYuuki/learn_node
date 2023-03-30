@@ -7,7 +7,7 @@ const commandSpawn = (...args) => {
     const childProcess = spawn(...args);
     // 将当前所有输出流，放到process 主进程里
     childProcess.stdout.pipe(process.stdout);
-    childProcess.stdout.pipe(process.stderr);
+    // childProcess.stdout.pipe(process.stderr);
     // 监听执行完
     childProcess.on("close", () => {
       resolve();
