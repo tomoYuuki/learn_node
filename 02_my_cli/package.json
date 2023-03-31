@@ -1,7 +1,7 @@
 {
-  "name": "02_my_cli",
-  "version": "1.0.1",
-  "description": "",
+  "name": "yuuki-vue-cli",
+  "version": "1.0.4",
+  "description": "vue前端开发小工具",
   "main": "index.js",
   "bin": {
     "yuuki": "index.js"
