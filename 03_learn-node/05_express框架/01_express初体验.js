@@ -1,21 +1,24 @@
-const express = require('express');
+const express = require("express");
 
 // express其实是一个函数: createApplication
 // 返回app
 const app = express();
 
 // 监听默认路径
-app.get('/', (req, res, next) => {
+app.get("/", (req, res, next) => {
   res.end("Hello Express");
-})
+});
 
-app.post('/', (req, res, next) => {
-  
-})
+app.post("/", (req, res, next) => {});
 
-app.post('/login', (req, res, next) => {
+app.post("/login", (req, res, next) => {
   res.end("Welcome Back~");
-})
+});
+
+// 写一个登录接口
+app.post("/login", (req, res, next) => {
+  res.end("Welcome Back~");
+});
 
 // 开启监听
 app.listen(8000, () => {

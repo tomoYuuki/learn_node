@@ -11,5 +11,3 @@ const message = "Hello";
 // 2.创建方式二:
 const buffer = Buffer.from(message);
 console.log(buffer);
-
-

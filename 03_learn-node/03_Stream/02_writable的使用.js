@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 
 // 传统的写入方式
 // fs.writeFile("./bar.txt", "Hello Stream", {flag: "a"}, (err) => {
@@ -6,9 +6,9 @@ const fs = require('fs');
 // });
 
 // Stream的写入方式
-const writer = fs.createWriteStream('./bar.txt', {
+const writer = fs.createWriteStream("./bar.txt", {
   flags: "r+",
-  start: 4
+  start: 4,
 });
 
 writer.write("你好啊", (err) => {
@@ -21,13 +21,13 @@ writer.write("你好啊", (err) => {
 
 writer.write("李银河", (err) => {
   console.log("第二次写入");
-})
+});
 
 // writer.close();
 // write("Hello World");
 // close();
 writer.end("Hello World");
 
-writer.on('close', () => {
+writer.on("close", () => {
   console.log("文件被关闭");
-})
+});
